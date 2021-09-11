@@ -1,6 +1,6 @@
 package com.example.code2021.structure;
 
-class Solution {
+class ChalkReplacer {
     public int chalkReplacer(int[] chalk, int k) {
         int n = chalk.length;
         long total = 0;
