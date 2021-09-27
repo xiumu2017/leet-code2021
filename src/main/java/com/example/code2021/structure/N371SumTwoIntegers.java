@@ -3,7 +3,7 @@ package com.example.code2021.structure;
 class N371SumTwoIntegers {
     public static void main(String[] args) {
         final N371SumTwoIntegers n371SumTwoIntegers = new N371SumTwoIntegers();
-        System.out.println(n371SumTwoIntegers.getSum(3, 4));
+        System.out.println(n371SumTwoIntegers.getSum(3, 14));
     }
 
     public int getSum(int a, int b) {
