@@ -1,5 +1,6 @@
 package com.example.code2021.structure.oct;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -10,9 +11,12 @@ import java.util.List;
  **/
 public class MainClass {
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3, 4, 3, 4, 5, 6, 4, 7, 1, 2, 4, 4, 5, 4, 4, 4, 4, 4,};
-        final List<Integer> list = testN229MajorityElementII(nums);
-        list.forEach(System.out::println);
+        final int[] ints = N492ConstructRectangle.constructRectangle(97);
+        Arrays.stream(ints).forEach(System.out::println);
+
+//        int[] nums = new int[]{1, 2, 3, 4, 3, 4, 5, 6, 4, 7, 1, 2, 4, 4, 5, 4, 4, 4, 4, 4,};
+//        final List<Integer> list = testN229MajorityElementII(nums);
+//        list.forEach(System.out::println);
     }
 
     public static List<Integer> testN229MajorityElementII(int[] nums) {
