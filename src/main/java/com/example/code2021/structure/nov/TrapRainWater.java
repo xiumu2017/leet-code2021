@@ -3,7 +3,7 @@ package com.example.code2021.structure.nov;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Solution {
+public class TrapRainWater {
 
     public int trapRainWater(int[][] heights) {
         if (heights == null || heights.length == 0 || heights[0].length == 0) {
