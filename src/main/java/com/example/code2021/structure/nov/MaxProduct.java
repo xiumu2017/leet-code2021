@@ -13,7 +13,7 @@ import java.util.Set;
 public class MaxProduct {
     public static void main(String[] args) {
         int mask = 0;
-        String s = "hello";
+        String s = "aa";
         for (int i = 0; i < s.length(); i++) {
             final int c = s.charAt(i) - 'a';
             System.out.println(c);
@@ -58,7 +58,7 @@ public class MaxProduct {
     }
 }
 
-class Solution {
+class PubSolution {
     public int maxProduct(String[] words) {
         Map<Integer, Integer> map = new HashMap<>();
         for (String s : words) {
