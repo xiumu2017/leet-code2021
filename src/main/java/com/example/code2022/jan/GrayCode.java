@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 中等难度
  * 2022-1-8 格雷码
  * https://leetcode-cn.com/problems/gray-code/
  * 对称生成
