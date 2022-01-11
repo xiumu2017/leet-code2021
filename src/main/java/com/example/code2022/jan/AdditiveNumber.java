@@ -4,7 +4,7 @@ package com.example.code2022.jan;
  * 中等题
  * 2022-01-10
  */
-class Solution {
+class AdditiveNumber {
     public boolean isAdditiveNumber(String num) {
         int n = num.length();
         for (int secondStart = 1; secondStart < n - 1; ++secondStart) {
