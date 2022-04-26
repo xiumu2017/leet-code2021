@@ -80,11 +80,16 @@ jobs:
         run: mv OUT_FOLDER/*.svg examples/
 
       - name: Push new svg posters
-        uses: github-actions-x/commit@v2.6
-        with:
-          github-token: ${{ secrets.G_T }}
-          commit-message: "Make new poster everyday"
-          files: examples
-          rebase: "true"
-          name: ${{ env.GITHUB_NAME }}
-          email: ${{ env.GITHUB_EMAIL }}
+        run: |
+          git config --local user.email "${{ env.GITHUB_EMAIL }}"
+          git config --local user.name "${{ env.GITHUB_NAME }}"
+          git commit -a -m 'update new poster' || echo "nothing to commit"
+          git push || echo "nothing to push"
+#         uses: github-actions-x/commit@v2.6
+#         with:
+#           github-token: ${{ secrets.G_T }}
+#           commit-message: "Make new poster everyday"
+#           files: examples
+#           rebase: "true"
+#           name: ${{ env.GITHUB_NAME }}
+#           email: ${{ env.GITHUB_EMAIL }}
